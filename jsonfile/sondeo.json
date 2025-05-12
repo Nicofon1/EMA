@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "pregunta": "¿El estudiante ha mostrado cambios notables en su actitud o comportamiento habitual (como volverse más reservado/a, agresivo/a o retraído/a)?",
+      "peso": 1.0,
+      "tipoPregunta": 0
+    },
+    {
+      "id": 2,
+      "pregunta": "¿El estudiante ha dejado de relacionarse con sus compañeros o ha comenzado a aislarse durante actividades grupales o recreos?",
+      "peso": 1.0,
+      "tipoPregunta": 1
+    },
+    {
+      "id": 3,
+      "pregunta": "¿El estudiante ha llegado al colegio con nuevas posesiones sin explicación clara o se ha ausentado repetidamente por viajes que no puede justificar?",
+      "peso": 1.2,
+      "tipoPregunta": 2
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Has notado que el estudiante está frecuentemente en compañía de adultos que parecen influir o controlar sus decisiones y comportamientos, incluso fuera de los espacios escolares?",
+      "peso": 1.2,
+      "tipoPregunta": 0
+    },
+    {
+      "id": 5,
+      "pregunta": "¿El estudiante ha manifestado ideas, comentarios o conductas sexualizadas que no corresponden con su edad o al entorno escolar?",
+      "peso": 1.5,
+      "tipoPregunta": 2
+    },
+    {
+      "id": 6,
+      "pregunta": "¿Has notado que el estudiante adopta comportamientos o formas de vestir que podrían considerarse sexualizados, especialmente si no eran habituales en él o ella?",
+      "peso": 1.5,
+      "tipoPregunta": 2
+    },
+    {
+      "id": 7,
+      "pregunta": "¿El estudiante pasa mucho tiempo en línea y muestra incomodidad o nerviosismo cuando usa su celular, Tablet o computador? ",
+      "peso": 1.3,
+      "tipoPregunta": 2
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Consideras que el estudiante podría estar en una situación que compromete su bienestar o seguridad, aunque no tengas certeza de lo que ocurre? ",
+      "peso": 1.5,
+      "tipoPregunta": 2
+    }
+  ]

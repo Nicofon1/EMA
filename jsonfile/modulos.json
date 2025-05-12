@@ -1,0 +1,104 @@
+[
+    {
+      "titulo": "Módulo 1: Introducción a la Prevención",
+      "descripcion": "Este módulo introduce los conceptos básicos de ESCNNA y la importancia de la prevención.",
+      "videoUrl": "videos/modulo1.mp4",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué significan las siglas ESCNNA?",
+          "opciones": [
+            "Explotación Sexual Comercial de Niños, Niñas y Adolescentes",
+            "Educación Sexual para Niños, Niñas y Adolescentes",
+            "Escuela Segura para Niños, Niñas y Adolescentes"
+          ],
+          "respuestaCorrecta": 0
+        },
+        {
+          "pregunta": "¿Cuál es el objetivo principal de la prevención del ESCNNA?",
+          "opciones": [
+            "Sancionar a los infractores",
+            "Proteger los derechos de NNA y evitar su revictimización",
+            "Promover el turismo sexual"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Quiénes son responsables de la protección de los NNA?",
+          "opciones": [
+            "Solo el Estado",
+            "La familia, la sociedad y el Estado",
+            "Únicamente los docentes"
+          ],
+          "respuestaCorrecta": 1
+        }
+      ]
+    },
+    {
+      "titulo": "Módulo 2: Identificación de Señales de Alerta",
+      "descripcion": "Este módulo describe las señales de alerta que pueden indicar un posible caso de ESCNNA.",
+      "videoUrl": "videos/modulo2.mp4",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuál de las siguientes NO es una señal de alerta?",
+          "opciones": [
+            "Cambios bruscos en el comportamiento",
+            "Interés por actividades académicas",
+            "Presencia de lesiones físicas sin explicación"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Qué se debe hacer ante una sospecha de ESCNNA?",
+          "opciones": [
+            "Investigar por cuenta propia",
+            "Informar a las autoridades competentes",
+            "Confrontar al presunto agresor"
+          ],
+          "respuestaCorrecta": 1
+        },
+         {
+          "pregunta": "Una ganancia inusual de dinero, ¿podría ser una señal de alerta?",
+          "opciones": [
+            "Sí",
+            "No",
+            "Tal vez"
+          ],
+          "respuestaCorrecta": 0
+        }
+      ]
+    },
+    {
+      "titulo": "Módulo 3: Ruta de Atención y Reporte",
+      "descripcion": "Este módulo explica el protocolo a seguir para reportar un caso de ESCNNA.",
+      "videoUrl": "videos/modulo3.mp4",
+      "preguntas": [
+        {
+          "pregunta": "¿A quién se debe reportar un caso de ESCNNA?",
+          "opciones": [
+            "A cualquier persona",
+            "A las autoridades competentes (policía, fiscalía, etc.)",
+            "A los medios de comunicación"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Es importante la confidencialidad al reportar un caso?",
+          "opciones": [
+            "No importa",
+            "Sí, para proteger a la víctima y no entorpecer la investigación",
+            "Solo si lo pide la víctima"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "Luego de reportar un caso, ¿cuál es el siguiente paso?",
+          "opciones": [
+            "Hacer seguimiento por cuenta propia",
+            "Esperar a que las autoridades realicen la investigación y brindar apoyo a la víctima",
+            "Divulgar el caso en redes sociales"
+          ],
+          "respuestaCorrecta": 1
+        }
+      ]
+    }
+  ]
