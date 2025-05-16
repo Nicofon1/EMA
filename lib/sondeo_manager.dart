@@ -17,7 +17,7 @@ class SondeoManager {
   static final SondeoManager _instance = SondeoManager._internal();
   factory SondeoManager() => _instance;
   SondeoManager._internal();
-
+  Function(double, String)? onResultadoSondeo;
 
   List<SondeoPregunta> _preguntas = [];
   List<SondeoPregunta> get preguntas => _preguntas;
@@ -107,6 +107,10 @@ Future<void> finalizarSondeo() async {
     double puntajeTotal = calcularPuntajeSondeo();
     String nivelRiesgo = determinarNivelRiesgo(puntajeTotal);
 
+
+        if (onResultadoSondeo != null) {
+        onResultadoSondeo!(puntajeTotal, nivelRiesgo);
+      }
     //  Construir el resultado para enviar a la IA
     ResultadoSondeo resultado = {
       "puntajeTotal": puntajeTotal,

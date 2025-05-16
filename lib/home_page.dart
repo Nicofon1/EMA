@@ -2,6 +2,7 @@ import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:gemini/api_manager.dart';
+import 'package:gemini/sondeo_manager.dart';
 import 'package:gemini/sondeo_page.dart';
 import 'package:gemini/modulos.dart'; // Importa la página de módulos
 
@@ -29,6 +30,8 @@ class _HomePageState extends State<HomePage> {
 
     // Asignar el callback para recibir la orden de crear el botón
     ApiManager().onIniciarSondeo = _enviarMensajeConBotonSondeo;
+
+     SondeoManager().onResultadoSondeo = _manejarResultadoSondeo;
   }
 
   @override
@@ -78,7 +81,8 @@ class _HomePageState extends State<HomePage> {
                 child: Text(message.text),
               ),
             );
-          }
+          }else if (message.customProperties?['type'] == 'formulario_reporte') {
+            return _buildFormularioReporte();}
           return null;
         },
       ),
@@ -139,6 +143,11 @@ class _HomePageState extends State<HomePage> {
 
 
 
+
+
+
+
+
   
   //_______________________________________________________________Backend_______________________________________________________________
   // Toda esta funcion si es full de back, pero por facilidad se puso aqui, lo que hace es recoplar en un solo string los ultimos 7 mensajes
@@ -173,4 +182,124 @@ class _HomePageState extends State<HomePage> {
     return pContexto;
   }
   //_____________________________________________________________________________________________________________________________________ 
+
+
+
+   void _manejarResultadoSondeo(double puntaje, String nivelRiesgo) {
+    // Enviar el mensaje genérico
+    final mensajeGenerico = ChatMessage(
+      user: geminiUser,
+      createdAt: DateTime.now(),
+      text:
+          "El sondeo ha arrojado un puntaje de ${puntaje.toStringAsFixed(1)}, lo que indica un nivel de riesgo $nivelRiesgo.",
+    );
+    setState(() {
+      messages = [mensajeGenerico, ...messages];
+    });
+
+    // Si el nivel de riesgo es moderado o alto, mostrar el formulario
+    if (nivelRiesgo == "Moderado" || nivelRiesgo == "Alto") {
+      _mostrarFormularioReporte();
+    } else {
+      // Si el riesgo es bajo o intermedio, podrías enviar el resultado del sondeo a ApiManager aquí si lo necesitas para la IA.
+      // Ejemplo:
+      // ApiManager().enviarResultadoSondeo(generarResultadoParaApi(puntaje, nivelRiesgo), SondeoManager().preguntas);
+    }
+  }
+
+  void _mostrarFormularioReporte() {
+    final ChatMessage mensajeFormulario = ChatMessage(
+      user: geminiUser,
+      createdAt: DateTime.now(),
+      text: "Por favor, completa la siguiente información:",
+      customProperties: {'type': 'formulario_reporte'},
+    );
+    setState(() {
+      messages = [mensajeFormulario, ...messages];
+    });
+  }
+
+
+
+  Widget _buildFormularioReporte() {
+    final _nombreController = TextEditingController();
+    final _edadController = TextEditingController();
+    final _gradoController = TextEditingController();
+    final _salonController = TextEditingController();
+    final _correoController = TextEditingController();
+    final _formKey = GlobalKey<FormState>();
+
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Form(
+        key: _formKey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextFormField(
+              controller: _nombreController,
+              decoration: InputDecoration(labelText: 'Nombre del estudiante'),
+              validator: (value) =>
+                  value?.isEmpty == true ? 'Campo requerido' : null,
+            ),
+            TextFormField(
+              controller: _edadController,
+              decoration: InputDecoration(labelText: 'Edad'),
+              keyboardType: TextInputType.number,
+              validator: (value) => value?.isEmpty == true
+                  ? 'Campo requerido'
+                  : int.tryParse(value!) == null
+                      ? 'Ingrese un número válido'
+                      : null,
+            ),
+            TextFormField(
+              controller: _gradoController,
+              decoration: InputDecoration(labelText: 'Grado'),
+              validator: (value) =>
+                  value?.isEmpty == true ? 'Campo requerido' : null,
+            ),
+            TextFormField(
+              controller: _salonController,
+              decoration: InputDecoration(labelText: 'Salón'),
+              validator: (value) =>
+                  value?.isEmpty == true ? 'Campo requerido' : null,
+            ),
+            TextFormField(
+              controller: _correoController,
+              decoration:
+                  InputDecoration(labelText: 'Correo institucional del docente'),
+              validator: (value) => value?.isEmpty == true
+                  ? 'Campo requerido'
+                  : !value!.contains('@')
+                      ? 'Ingrese un correo válido'
+                      : null,
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {
+                  final infoReporte =
+                      'Nombre: ${_nombreController.text}, Edad: ${_edadController.text}, Grado: ${_gradoController.text}, Salón: ${_salonController.text}, Correo Docente: ${_correoController.text}';
+                  ApiManager().guardarInformacionReporte(infoReporte);
+                  // Opcional: Puedes enviar un mensaje al chat indicando que la información se guardó
+                  final mensajeInfoGuardada = ChatMessage(
+                    user: geminiUser,
+                    createdAt: DateTime.now(),
+                    text: "La información del reporte ha sido guardada.",
+                  );
+                  setState(() {
+                    messages = [mensajeInfoGuardada, ...messages];
+                  });
+                }
+              },
+              child: const Text('Completar'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  // ... (otras funciones) ...
+
 }
