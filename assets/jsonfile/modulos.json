@@ -1,0 +1,169 @@
+[
+    {
+      "titulo": "Módulo 1: Introducción a la Prevención",
+      "descripcion": "Este módulo introduce los conceptos básicos de ESCNNA y la importancia de la prevención.",
+      "videoUrl": "videos/modulo1.mp4",
+      
+      "preguntas": [
+        {
+          "pregunta": "¿Cuál de los siguientes comportamientos se considera un factor de riesgo alto de ESCNNA?",
+          "opciones": [
+            "El estudiante evita hablar con adultos del colegio",
+            "Uso frecuente del celular en clase",
+            "Dependencia constante de un adulto controlador",
+            "Cambios en el estado de ánimo"
+          ],
+          "respuestaCorrecta": 2
+        },
+        {
+          "pregunta": "¿Qué tipo de señales físicas deben alertar sobre posible ESCNNA?",
+          "opciones": [
+            "Peinados descuidados y ropa sucia",
+            "Morados, quemaduras o heridas sin explicación",
+            "Manchas de tinta o tierra en la ropa",
+            "Rasguños menores de juego"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Qué característica hace sospechoso un conocimiento sexual en un estudiante como señal de alerta de ESCNNA?",
+          "opciones": [
+            "Que lo comparta con amigos",
+            "Que use palabras informales",
+            "Que no corresponda con su edad",
+            "Que se sienta cómodo hablando del tema"
+          ],
+          "respuestaCorrecta": 2
+        },
+        {
+          "pregunta": "¿Cuál de los siguientes sería un indicador de riesgo moderado de ESCNNA?",
+          "opciones": [
+            "Que el estudiante se aísle de sus compañeros",
+            "Que aparezca con objetos costosos sin explicación clara",
+            "Que tenga bajo rendimiento en un área específica",
+            "Que prefiera estar en clase que en descanso"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Cuál de las siguientes situaciones representa un problema escolar relacionado con ESCNNA?",
+          "opciones": [
+            "No entregar tareas a tiempo",
+            "Ausencias frecuentes o viajes repentinos sin justificar",
+            "Sacar malas notas en matemáticas",
+            "Cambiarse de grupo escolar"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Cuál comportamiento en línea podría considerarse señal de alerta de posible ESCNNA?",
+          "opciones": [
+            "Usar audífonos durante la clase sin permiso",
+            "Pedir prestado el celular de un compañero para jugar",
+            "Mostrar nerviosismo al usar el celular",
+            "Usar el celular para buscar información en internet"
+          ],
+          "respuestaCorrecta": 2
+        },
+        {
+          "pregunta": "¿Qué factor se considera de riesgo leve de posible ESCNNA?",
+          "opciones": [
+            "Mostrar interés en actividades extracurriculares",
+            "Aislamiento repentino o desinterés escolar",
+            "Tener discusiones con compañeros",
+            "Comer solo en el descanso"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "Si un estudiante muestra una señal de riesgo de ESCNNA, ¿cuál es la acción inicial que debería hacer el docente?",
+          "opciones": [
+            "Llamar a los padres para aclarar lo que pasa",
+            "Hablar con el estudiante para que confiese",
+            "Observar con atención, registrar la señal y diligenciar el sondeo",
+            "Reportar el caso directamente a las autoridades sin evaluar"
+          ],
+          "respuestaCorrecta": 2
+        },
+        {
+          "pregunta": "¿Cuál es el mensaje principal del módulo sobre el rol del docente en la prevención del ESCNNA?",
+          "opciones": [
+            "Castigar al estudiante cuando actúe raro",
+            "Observar a todos por igual sin involucrarse",
+            "Observar, escuchar y actuar con responsabilidad",
+            "Llamar a los padres ante cualquier sospecha"
+          ],
+          "respuestaCorrecta": 2
+        }
+      ]
+
+    },
+    {
+      "titulo": "Módulo 2: Identificación de Señales de Alerta",
+      "descripcion": "Este módulo describe las señales de alerta que pueden indicar un posible caso de ESCNNA.",
+      "videoUrl": "videos/modulo2.mp4",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuál de las siguientes NO es una señal de alerta?",
+          "opciones": [
+            "Cambios bruscos en el comportamiento",
+            "Interés por actividades académicas",
+            "Presencia de lesiones físicas sin explicación"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Qué se debe hacer ante una sospecha de ESCNNA?",
+          "opciones": [
+            "Investigar por cuenta propia",
+            "Informar a las autoridades competentes",
+            "Confrontar al presunto agresor"
+          ],
+          "respuestaCorrecta": 1
+        },
+         {
+          "pregunta": "Una ganancia inusual de dinero, ¿podría ser una señal de alerta?",
+          "opciones": [
+            "Sí",
+            "No",
+            "Tal vez"
+          ],
+          "respuestaCorrecta": 0
+        }
+      ]
+    },
+    {
+      "titulo": "Módulo 3: Ruta de Atención y Reporte",
+      "descripcion": "Este módulo explica el protocolo a seguir para reportar un caso de ESCNNA.",
+      "videoUrl": "videos/modulo3.mp4",
+      "preguntas": [
+        {
+          "pregunta": "¿A quién se debe reportar un caso de ESCNNA?",
+          "opciones": [
+            "A cualquier persona",
+            "A las autoridades competentes (policía, fiscalía, etc.)",
+            "A los medios de comunicación"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "¿Es importante la confidencialidad al reportar un caso?",
+          "opciones": [
+            "No importa",
+            "Sí, para proteger a la víctima y no entorpecer la investigación",
+            "Solo si lo pide la víctima"
+          ],
+          "respuestaCorrecta": 1
+        },
+        {
+          "pregunta": "Luego de reportar un caso, ¿cuál es el siguiente paso?",
+          "opciones": [
+            "Hacer seguimiento por cuenta propia",
+            "Esperar a que las autoridades realicen la investigación y brindar apoyo a la víctima",
+            "Divulgar el caso en redes sociales"
+          ],
+          "respuestaCorrecta": 1
+        }
+      ]
+    }
+  ]
